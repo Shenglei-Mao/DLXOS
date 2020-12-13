@@ -1,0 +1,1509 @@
+cd ../apps/example; make && make run
+make[1]: Entering directory `/home/min/a/ece69501/ece695/lab3/fork/apps/example'
+cd makeprocs; make
+make[2]: Entering directory `/home/min/a/ece69501/ece695/lab3/fork/apps/example/makeprocs'
+make[2]: Nothing to be done for `top'.
+make[2]: Leaving directory `/home/min/a/ece69501/ece695/lab3/fork/apps/example/makeprocs'
+cd hello_world; make
+make[2]: Entering directory `/home/min/a/ece69501/ece695/lab3/fork/apps/example/hello_world'
+make[2]: Nothing to be done for `top'.
+make[2]: Leaving directory `/home/min/a/ece69501/ece695/lab3/fork/apps/example/hello_world'
+make[1]: Leaving directory `/home/min/a/ece69501/ece695/lab3/fork/apps/example'
+make[1]: Entering directory `/home/min/a/ece69501/ece695/lab3/fork/apps/example'
+#cd ../../bin; dlxsim -D m -x os.dlx.obj -a -D m -u makeprocs.dlx.obj 5; ee469_fixterminal
+#cd ../../bin; dlxsim -D p -x os.dlx.obj -a -D p -u makeprocs.dlx.obj 5; ee469_fixterminal
+#cd ../../bin; dlxsim -x os.dlx.obj -a -u makeprocs.dlx.obj 5; ee469_fixterminal
+cd ../../bin; dlxsim -D m -x os.dlx.obj -a -D m -u makeprocs.dlx.obj; ee469_fixterminal
+setting debug flag m
+Stack=0x1fffc0, pc starting at 0x148b8
+Got 4 arguments.
+Available memory: 0x25558 -> 0x200000.
+Argument count is 4.
+Argument 0 is -D.
+Argument 1 is m.
+Argument 2 is -u.
+Argument 3 is makeprocs.dlx.obj.
+Last OS address is: 152920.
+freemap information: .......
+freemap at index0 have value of 0: 
+freemap at index1 have value of 67108863: 
+freemap at index2 have value of -1: 
+freemap at index3 have value of -1: 
+freemap at index4 have value of -1: 
+freemap at index5 have value of -1: 
+freemap at index6 have value of -1: 
+freemap at index7 have value of -1: 
+freemap at index8 have value of -1: 
+freemap at index9 have value of -1: 
+freemap at index10 have value of -1: 
+freemap at index11 have value of -1: 
+freemap at index12 have value of -1: 
+freemap at index13 have value of -1: 
+freemap at index14 have value of -1: 
+freemap at index15 have value of -1: 
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessModuleInit: start to initialize the PCB's page table
+Student - ProcessFork: start to allocate pages for a new process
+Student - ProcessFork: start to allocate 4 pages for user code and global data
+Return physical page index 38
+PID (351545274) Phypage (38) ReferenceCounter (1): 
+MemoryAllocPte (351545274): function started
+Student - ProcessFork: pcb->pagetable[0] = 155649
+Return physical page index 39
+PID (351545274) Phypage (39) ReferenceCounter (1): 
+MemoryAllocPte (351545274): function started
+Student - ProcessFork: pcb->pagetable[1] = 159745
+Return physical page index 40
+PID (351545274) Phypage (40) ReferenceCounter (1): 
+MemoryAllocPte (351545274): function started
+Student - ProcessFork: pcb->pagetable[2] = 163841
+Return physical page index 41
+PID (351545274) Phypage (41) ReferenceCounter (1): 
+MemoryAllocPte (351545274): function started
+Student - ProcessFork: pcb->pagetable[3] = 167937
+Student - ProcessFork: start to allocate 1 page for user stack
+Return physical page index 42
+PID (351545274) Phypage (42) ReferenceCounter (1): 
+MemoryAllocPte (351545274): function started
+Student - ProcessFork: start to allocate 1 page for system stack
+Return physical page index 43
+PID (351545274) Phypage (43) ReferenceCounter (1): 
+ProcessFork: stackframe = 0x2bea8
+stackframe[PROCESS_STACK_USER_STACKPOINTER] = ffffc
+Translating 0x10d4
+0x10d4 => 0x270d4 (=afbefffc) using base1=0x21bd4/12, entry 1
+Translating 0xffeec
+0xffeec => 0x2aeec (=00000000) using base1=0x21bd4/12, entry 255
+Translating 0x10d8
+0x10d8 => 0x270d8 (=001df020) using base1=0x21bd4/12, entry 1
+Translating 0x10dc
+0x10dc => 0x270dc (=afbffff8) using base1=0x21bd4/12, entry 1
+Translating 0xffee8
+0xffee8 => 0x2aee8 (=00000000) using base1=0x21bd4/12, entry 255
+Translating 0x10e0
+0x10e0 => 0x270e0 (=2fbd0008) using base1=0x21bd4/12, entry 1
+Translating 0x10e4
+0x10e4 => 0x270e4 (=0c001004) using base1=0x21bd4/12, entry 1
+Translating 0x20ec
+0x20ec => 0x280ec (=4be00000) using base1=0x21bd4/12, entry 2
+Translating 0x10e8
+0x10e8 => 0x270e8 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x10ec
+0x10ec => 0x270ec (=23bdfff8) using base1=0x21bd4/12, entry 1
+Translating 0x10f0
+0x10f0 => 0x270f0 (=3c030000) using base1=0x21bd4/12, entry 1
+Translating 0x10f4
+0x10f4 => 0x270f4 (=24633000) using base1=0x21bd4/12, entry 1
+Translating 0x10f8
+0x10f8 => 0x270f8 (=afa30000) using base1=0x21bd4/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2aee0 (=00000000) using base1=0x21bd4/12, entry 255
+Translating 0x10fc
+0x10fc => 0x270fc (=0c000114) using base1=0x21bd4/12, entry 1
+Translating 0x1214
+0x1214 => 0x27214 (=44000201) using base1=0x21bd4/12, entry 1
+-------------------------------------------------------------------------------------
+Translating 0x1218
+0x1218 => 0x27218 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x1100
+0x1100 => 0x27100 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x1104
+0x1104 => 0x27104 (=0c000124) using base1=0x21bd4/12, entry 1
+Translating 0x122c
+0x122c => 0x2722c (=44000431) using base1=0x21bd4/12, entry 1
+Translating 0x1230
+0x1230 => 0x27230 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x1108
+0x1108 => 0x27108 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x110c
+0x110c => 0x2710c (=3c030000) using base1=0x21bd4/12, entry 1
+Translating 0x1110
+0x1110 => 0x27110 (=24633058) using base1=0x21bd4/12, entry 1
+Translating 0x1114
+0x1114 => 0x27114 (=afa30000) using base1=0x21bd4/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2aee0 (=00003000) using base1=0x21bd4/12, entry 255
+Translating 0x1118
+0x1118 => 0x27118 (=afa10004) using base1=0x21bd4/12, entry 1
+Translating 0xffee4
+0xffee4 => 0x2aee4 (=00000000) using base1=0x21bd4/12, entry 255
+Translating 0x111c
+0x111c => 0x2711c (=0c0000f4) using base1=0x21bd4/12, entry 1
+Translating 0x1214
+0x1214 => 0x27214 (=44000201) using base1=0x21bd4/12, entry 1
+makeprocs (31): Test fork 
+Translating 0x1218
+0x1218 => 0x27218 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x1120
+0x1120 => 0x27120 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x1124
+0x1124 => 0x27124 (=0c000104) using base1=0x21bd4/12, entry 1
+Translating 0x122c
+0x122c => 0x2722c (=44000431) using base1=0x21bd4/12, entry 1
+Translating 0x1230
+0x1230 => 0x27230 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x1128
+0x1128 => 0x27128 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x112c
+0x112c => 0x2712c (=3c030000) using base1=0x21bd4/12, entry 1
+Translating 0x1130
+0x1130 => 0x27130 (=24633074) using base1=0x21bd4/12, entry 1
+Translating 0x1134
+0x1134 => 0x27134 (=afa30000) using base1=0x21bd4/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2aee0 (=00003058) using base1=0x21bd4/12, entry 255
+Translating 0x1138
+0x1138 => 0x27138 (=afa10004) using base1=0x21bd4/12, entry 1
+Translating 0xffee4
+0xffee4 => 0x2aee4 (=0000001f) using base1=0x21bd4/12, entry 255
+Translating 0x113c
+0x113c => 0x2713c (=0c0000d4) using base1=0x21bd4/12, entry 1
+Translating 0x1214
+0x1214 => 0x27214 (=44000201) using base1=0x21bd4/12, entry 1
+The main program process ID is 31
+Translating 0x1218
+0x1218 => 0x27218 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x1140
+0x1140 => 0x27140 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x1144
+0x1144 => 0x27144 (=0c0000d8) using base1=0x21bd4/12, entry 1
+Translating 0x1220
+0x1220 => 0x27220 (=44000430) using base1=0x21bd4/12, entry 1
+Entering ProcessRealFork PID = 0x21b74
+Student - ProcessRealFork: Start to share or allocate pages for a new child process
+Student - ProcessRealFork: Share the 4 pages for user code and global data
+PID (31) Phypage (38) ReferenceCounter (2): 
+PID (31) Phypage (39) ReferenceCounter (2): 
+PID (31) Phypage (40) ReferenceCounter (2): 
+PID (31) Phypage (41) ReferenceCounter (2): 
+Student - ProcessRealFork: Share the 1 page for user stack
+PID (31) Phypage (42) ReferenceCounter (2): 
+Student - ProcessRealFork: Allocate 1 page for child process' system stack and copy the content from parent process
+Return physical page index 44
+PID (31) Phypage (44) ReferenceCounter (1): 
+Student - Child process: Reference counter of system stack page
+PID (31) Phypage (44) ReferenceCounter (1): 
+Student - Parent process: Reference counter of system stack page
+PID (31) Phypage (43) ReferenceCounter (1): 
+ProcessRealFork: stackframe = 0x2cea8
+Parent process31: Code and Global data page0 PTE of is 155653
+Child process30: Code and Global data page0 PTE of is 155653
+Parent process31: Code and Global data page1 PTE of is 159749
+Child process30: Code and Global data page1 PTE of is 159749
+Parent process31: Code and Global data page2 PTE of is 163845
+Child process30: Code and Global data page2 PTE of is 163845
+Parent process31: Code and Global data page3 PTE of is 167941
+Child process30: Code and Global data page3 PTE of is 167941
+Parent process31: User Stack page PTE of is 172039
+Child process30: User Stack page PTE of is 172039
+Parent process31: System Stack page PTE of is 176128
+Child process30: System Stack page PTE of is 180224
+Leaving ProcessRealFork (makeprocs.dlx.obj)
+Translating 0x1224
+0x1224 => 0x27224 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x1148
+0x1148 => 0x27148 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x114c
+0x114c => 0x2714c (=00011020) using base1=0x21bd4/12, entry 1
+Translating 0x1150
+0x1150 => 0x27150 (=3c030000) using base1=0x21bd4/12, entry 1
+Translating 0x1154
+0x1154 => 0x27154 (=24633098) using base1=0x21bd4/12, entry 1
+Translating 0x1158
+0x1158 => 0x27158 (=afa30000) using base1=0x21bd4/12, entry 1
+Translating 0xffee0
+Cpu: writing a read-only page, vaddr=0xff000
+Trap for protection to copy-on-write
+Student - MemoryRopAccessHandler: RopAccess fault adress is: ff000
+Student - MemoryRopAccessHandler: vpagenum is: 255, and ppagenum is: 42
+Student - MemoryRopAccessHandler: reference counter is: 2
+Return physical page index 45
+PID (31) Phypage (45) ReferenceCounter (1): 
+MemoryAllocPte (31): function started
+Translating 0x1158
+0x1158 => 0x27158 (=afa30000) using base1=0x21bd4/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2dee0 (=00000000) using base1=0x21bd4/12, entry 255
+Translating 0x115c
+0x115c => 0x2715c (=afa20004) using base1=0x21bd4/12, entry 1
+Translating 0xffee4
+0xffee4 => 0x2dee4 (=00000000) using base1=0x21bd4/12, entry 255
+Translating 0x1160
+0x1160 => 0x27160 (=0c0000b0) using base1=0x21bd4/12, entry 1
+Translating 0x1214
+0x1214 => 0x27214 (=44000201) using base1=0x21bd4/12, entry 1
+Child PID is 30
+Translating 0x1218
+0x1218 => 0x27218 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x1164
+0x1164 => 0x27164 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x1168
+0x1168 => 0x27168 (=23bd0008) using base1=0x21bd4/12, entry 1
+Translating 0x116c
+0x116c => 0x2716c (=0c0000bc) using base1=0x21bd4/12, entry 1
+Translating 0x122c
+0x122c => 0x2722c (=44000431) using base1=0x21bd4/12, entry 1
+Translating 0x1230
+0x1230 => 0x27230 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x1170
+0x1170 => 0x27170 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x1174
+0x1174 => 0x27174 (=23bdfff8) using base1=0x21bd4/12, entry 1
+Translating 0x1178
+0x1178 => 0x27178 (=afa10000) using base1=0x21bd4/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2dee0 (=00003098) using base1=0x21bd4/12, entry 255
+Translating 0x117c
+0x117c => 0x2717c (=0c0000c4) using base1=0x21bd4/12, entry 1
+Translating 0x1244
+0x1244 => 0x27244 (=44000433) using base1=0x21bd4/12, entry 1
+Current PTE0 of process31 is 155653
+Current PTE1 of process31 is 159749
+Current PTE2 of process31 is 163845
+Current PTE3 of process31 is 167941
+Current PTE4 of process31 is 0
+Current PTE5 of process31 is 0
+Current PTE6 of process31 is 0
+Current PTE7 of process31 is 0
+Current PTE8 of process31 is 0
+Current PTE9 of process31 is 0
+Current PTE10 of process31 is 0
+Current PTE11 of process31 is 0
+Current PTE12 of process31 is 0
+Current PTE13 of process31 is 0
+Current PTE14 of process31 is 0
+Current PTE15 of process31 is 0
+Current PTE16 of process31 is 0
+Current PTE17 of process31 is 0
+Current PTE18 of process31 is 0
+Current PTE19 of process31 is 0
+Current PTE20 of process31 is 0
+Current PTE21 of process31 is 0
+Current PTE22 of process31 is 0
+Current PTE23 of process31 is 0
+Current PTE24 of process31 is 0
+Current PTE25 of process31 is 0
+Current PTE26 of process31 is 0
+Current PTE27 of process31 is 0
+Current PTE28 of process31 is 0
+Current PTE29 of process31 is 0
+Current PTE30 of process31 is 0
+Current PTE31 of process31 is 0
+Current PTE32 of process31 is 0
+Current PTE33 of process31 is 0
+Current PTE34 of process31 is 0
+Current PTE35 of process31 is 0
+Current PTE36 of process31 is 0
+Current PTE37 of process31 is 0
+Current PTE38 of process31 is 0
+Current PTE39 of process31 is 0
+Current PTE40 of process31 is 0
+Current PTE41 of process31 is 0
+Current PTE42 of process31 is 0
+Current PTE43 of process31 is 0
+Current PTE44 of process31 is 0
+Current PTE45 of process31 is 0
+Current PTE46 of process31 is 0
+Current PTE47 of process31 is 0
+Current PTE48 of process31 is 0
+Current PTE49 of process31 is 0
+Current PTE50 of process31 is 0
+Current PTE51 of process31 is 0
+Current PTE52 of process31 is 0
+Current PTE53 of process31 is 0
+Current PTE54 of process31 is 0
+Current PTE55 of process31 is 0
+Current PTE56 of process31 is 0
+Current PTE57 of process31 is 0
+Current PTE58 of process31 is 0
+Current PTE59 of process31 is 0
+Current PTE60 of process31 is 0
+Current PTE61 of process31 is 0
+Current PTE62 of process31 is 0
+Current PTE63 of process31 is 0
+Current PTE64 of process31 is 0
+Current PTE65 of process31 is 0
+Current PTE66 of process31 is 0
+Current PTE67 of process31 is 0
+Current PTE68 of process31 is 0
+Current PTE69 of process31 is 0
+Current PTE70 of process31 is 0
+Current PTE71 of process31 is 0
+Current PTE72 of process31 is 0
+Current PTE73 of process31 is 0
+Current PTE74 of process31 is 0
+Current PTE75 of process31 is 0
+Current PTE76 of process31 is 0
+Current PTE77 of process31 is 0
+Current PTE78 of process31 is 0
+Current PTE79 of process31 is 0
+Current PTE80 of process31 is 0
+Current PTE81 of process31 is 0
+Current PTE82 of process31 is 0
+Current PTE83 of process31 is 0
+Current PTE84 of process31 is 0
+Current PTE85 of process31 is 0
+Current PTE86 of process31 is 0
+Current PTE87 of process31 is 0
+Current PTE88 of process31 is 0
+Current PTE89 of process31 is 0
+Current PTE90 of process31 is 0
+Current PTE91 of process31 is 0
+Current PTE92 of process31 is 0
+Current PTE93 of process31 is 0
+Current PTE94 of process31 is 0
+Current PTE95 of process31 is 0
+Current PTE96 of process31 is 0
+Current PTE97 of process31 is 0
+Current PTE98 of process31 is 0
+Current PTE99 of process31 is 0
+Current PTE100 of process31 is 0
+Current PTE101 of process31 is 0
+Current PTE102 of process31 is 0
+Current PTE103 of process31 is 0
+Current PTE104 of process31 is 0
+Current PTE105 of process31 is 0
+Current PTE106 of process31 is 0
+Current PTE107 of process31 is 0
+Current PTE108 of process31 is 0
+Current PTE109 of process31 is 0
+Current PTE110 of process31 is 0
+Current PTE111 of process31 is 0
+Current PTE112 of process31 is 0
+Current PTE113 of process31 is 0
+Current PTE114 of process31 is 0
+Current PTE115 of process31 is 0
+Current PTE116 of process31 is 0
+Current PTE117 of process31 is 0
+Current PTE118 of process31 is 0
+Current PTE119 of process31 is 0
+Current PTE120 of process31 is 0
+Current PTE121 of process31 is 0
+Current PTE122 of process31 is 0
+Current PTE123 of process31 is 0
+Current PTE124 of process31 is 0
+Current PTE125 of process31 is 0
+Current PTE126 of process31 is 0
+Current PTE127 of process31 is 0
+Current PTE128 of process31 is 0
+Current PTE129 of process31 is 0
+Current PTE130 of process31 is 0
+Current PTE131 of process31 is 0
+Current PTE132 of process31 is 0
+Current PTE133 of process31 is 0
+Current PTE134 of process31 is 0
+Current PTE135 of process31 is 0
+Current PTE136 of process31 is 0
+Current PTE137 of process31 is 0
+Current PTE138 of process31 is 0
+Current PTE139 of process31 is 0
+Current PTE140 of process31 is 0
+Current PTE141 of process31 is 0
+Current PTE142 of process31 is 0
+Current PTE143 of process31 is 0
+Current PTE144 of process31 is 0
+Current PTE145 of process31 is 0
+Current PTE146 of process31 is 0
+Current PTE147 of process31 is 0
+Current PTE148 of process31 is 0
+Current PTE149 of process31 is 0
+Current PTE150 of process31 is 0
+Current PTE151 of process31 is 0
+Current PTE152 of process31 is 0
+Current PTE153 of process31 is 0
+Current PTE154 of process31 is 0
+Current PTE155 of process31 is 0
+Current PTE156 of process31 is 0
+Current PTE157 of process31 is 0
+Current PTE158 of process31 is 0
+Current PTE159 of process31 is 0
+Current PTE160 of process31 is 0
+Current PTE161 of process31 is 0
+Current PTE162 of process31 is 0
+Current PTE163 of process31 is 0
+Current PTE164 of process31 is 0
+Current PTE165 of process31 is 0
+Current PTE166 of process31 is 0
+Current PTE167 of process31 is 0
+Current PTE168 of process31 is 0
+Current PTE169 of process31 is 0
+Current PTE170 of process31 is 0
+Current PTE171 of process31 is 0
+Current PTE172 of process31 is 0
+Current PTE173 of process31 is 0
+Current PTE174 of process31 is 0
+Current PTE175 of process31 is 0
+Current PTE176 of process31 is 0
+Current PTE177 of process31 is 0
+Current PTE178 of process31 is 0
+Current PTE179 of process31 is 0
+Current PTE180 of process31 is 0
+Current PTE181 of process31 is 0
+Current PTE182 of process31 is 0
+Current PTE183 of process31 is 0
+Current PTE184 of process31 is 0
+Current PTE185 of process31 is 0
+Current PTE186 of process31 is 0
+Current PTE187 of process31 is 0
+Current PTE188 of process31 is 0
+Current PTE189 of process31 is 0
+Current PTE190 of process31 is 0
+Current PTE191 of process31 is 0
+Current PTE192 of process31 is 0
+Current PTE193 of process31 is 0
+Current PTE194 of process31 is 0
+Current PTE195 of process31 is 0
+Current PTE196 of process31 is 0
+Current PTE197 of process31 is 0
+Current PTE198 of process31 is 0
+Current PTE199 of process31 is 0
+Current PTE200 of process31 is 0
+Current PTE201 of process31 is 0
+Current PTE202 of process31 is 0
+Current PTE203 of process31 is 0
+Current PTE204 of process31 is 0
+Current PTE205 of process31 is 0
+Current PTE206 of process31 is 0
+Current PTE207 of process31 is 0
+Current PTE208 of process31 is 0
+Current PTE209 of process31 is 0
+Current PTE210 of process31 is 0
+Current PTE211 of process31 is 0
+Current PTE212 of process31 is 0
+Current PTE213 of process31 is 0
+Current PTE214 of process31 is 0
+Current PTE215 of process31 is 0
+Current PTE216 of process31 is 0
+Current PTE217 of process31 is 0
+Current PTE218 of process31 is 0
+Current PTE219 of process31 is 0
+Current PTE220 of process31 is 0
+Current PTE221 of process31 is 0
+Current PTE222 of process31 is 0
+Current PTE223 of process31 is 0
+Current PTE224 of process31 is 0
+Current PTE225 of process31 is 0
+Current PTE226 of process31 is 0
+Current PTE227 of process31 is 0
+Current PTE228 of process31 is 0
+Current PTE229 of process31 is 0
+Current PTE230 of process31 is 0
+Current PTE231 of process31 is 0
+Current PTE232 of process31 is 0
+Current PTE233 of process31 is 0
+Current PTE234 of process31 is 0
+Current PTE235 of process31 is 0
+Current PTE236 of process31 is 0
+Current PTE237 of process31 is 0
+Current PTE238 of process31 is 0
+Current PTE239 of process31 is 0
+Current PTE240 of process31 is 0
+Current PTE241 of process31 is 0
+Current PTE242 of process31 is 0
+Current PTE243 of process31 is 0
+Current PTE244 of process31 is 0
+Current PTE245 of process31 is 0
+Current PTE246 of process31 is 0
+Current PTE247 of process31 is 0
+Current PTE248 of process31 is 0
+Current PTE249 of process31 is 0
+Current PTE250 of process31 is 0
+Current PTE251 of process31 is 0
+Current PTE252 of process31 is 0
+Current PTE253 of process31 is 0
+Current PTE254 of process31 is 0
+Current PTE255 of process31 is 184323
+Translating 0x1248
+0x1248 => 0x27248 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x1180
+0x1180 => 0x27180 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x1184
+0x1184 => 0x27184 (=23bd0008) using base1=0x21bd4/12, entry 1
+Translating 0x1188
+0x1188 => 0x27188 (=23bdfff8) using base1=0x21bd4/12, entry 1
+Translating 0x118c
+0x118c => 0x2718c (=3c030000) using base1=0x21bd4/12, entry 1
+Translating 0x1190
+0x1190 => 0x27190 (=24633000) using base1=0x21bd4/12, entry 1
+Translating 0x1194
+0x1194 => 0x27194 (=afa30000) using base1=0x21bd4/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2dee0 (=0000001f) using base1=0x21bd4/12, entry 255
+Translating 0x1198
+0x1198 => 0x27198 (=0c000078) using base1=0x21bd4/12, entry 1
+Translating 0x1214
+0x1214 => 0x27214 (=44000201) using base1=0x21bd4/12, entry 1
+-------------------------------------------------------------------------------------
+Translating 0x1218
+0x1218 => 0x27218 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x119c
+0x119c => 0x2719c (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x11a0
+0x11a0 => 0x271a0 (=0c000088) using base1=0x21bd4/12, entry 1
+Translating 0x122c
+0x122c => 0x2722c (=44000431) using base1=0x21bd4/12, entry 1
+Translating 0x1230
+0x1230 => 0x27230 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x11a4
+0x11a4 => 0x271a4 (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x11a8
+0x11a8 => 0x271a8 (=3c030000) using base1=0x21bd4/12, entry 1
+Translating 0x11ac
+0x11ac => 0x271ac (=246330ac) using base1=0x21bd4/12, entry 1
+Translating 0x11b0
+0x11b0 => 0x271b0 (=afa30000) using base1=0x21bd4/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2dee0 (=00003000) using base1=0x21bd4/12, entry 255
+Translating 0x11b4
+0x11b4 => 0x271b4 (=afa10004) using base1=0x21bd4/12, entry 1
+Translating 0xffee4
+0xffee4 => 0x2dee4 (=0000001e) using base1=0x21bd4/12, entry 255
+Translating 0x11b8
+0x11b8 => 0x271b8 (=0c000058) using base1=0x21bd4/12, entry 1
+Translating 0x1214
+0x1214 => 0x27214 (=44000201) using base1=0x21bd4/12, entry 1
+makeprocs (31): All other processes completed, exiting main process.
+Translating 0x1218
+0x1218 => 0x27218 (=4be00000) using base1=0x21bd4/12, entry 1
+Translating 0x11bc
+0x11bc => 0x271bc (=54000000) using base1=0x21bd4/12, entry 1
+Translating 0x11c0
+0x11c0 => 0x271c0 (=23bd0008) using base1=0x21bd4/12, entry 1
+Translating 0x11c4
+0x11c4 => 0x271c4 (=0c000f18) using base1=0x21bd4/12, entry 1
+Translating 0x20e0
+0x20e0 => 0x280e0 (=44000300) using base1=0x21bd4/12, entry 2
+Student - ProcessFreeResources: start to free any memory resources on process death
+Student - ProcessFreeResources: start to free system stack
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (43) ReferenceCounter (0): 
+Student - ProcessFork: start to free user stack
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (38) ReferenceCounter (1): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (39) ReferenceCounter (1): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (40) ReferenceCounter (1): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (41) ReferenceCounter (1): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (45) ReferenceCounter (0): 
+Student - ProcessFork: start to free user code and global data
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+PID (30) MemoryFreePage: function started
+PID (30) Phypage (0) ReferenceCounter (0): 
+Translating 0x1224
+0x1224 => 0x27224 (=4be00000) using base1=0x21770/12, entry 1
+Translating 0x1148
+0x1148 => 0x27148 (=54000000) using base1=0x21770/12, entry 1
+Translating 0x114c
+0x114c => 0x2714c (=00011020) using base1=0x21770/12, entry 1
+Translating 0x1150
+0x1150 => 0x27150 (=3c030000) using base1=0x21770/12, entry 1
+Translating 0x1154
+0x1154 => 0x27154 (=24633098) using base1=0x21770/12, entry 1
+Translating 0x1158
+0x1158 => 0x27158 (=afa30000) using base1=0x21770/12, entry 1
+Translating 0xffee0
+Cpu: writing a read-only page, vaddr=0xff000
+Trap for protection to copy-on-write
+Student - MemoryRopAccessHandler: RopAccess fault adress is: ff000
+Student - MemoryRopAccessHandler: vpagenum is: 255, and ppagenum is: 42
+Translating 0x1158
+0x1158 => 0x27158 (=afa30000) using base1=0x21770/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2aee0 (=00003074) using base1=0x21770/12, entry 255
+Translating 0x115c
+0x115c => 0x2715c (=afa20004) using base1=0x21770/12, entry 1
+Translating 0xffee4
+0xffee4 => 0x2aee4 (=0000001f) using base1=0x21770/12, entry 255
+Translating 0x1160
+0x1160 => 0x27160 (=0c0000b0) using base1=0x21770/12, entry 1
+Translating 0x1214
+0x1214 => 0x27214 (=44000201) using base1=0x21770/12, entry 1
+Child PID is 0
+Translating 0x1218
+0x1218 => 0x27218 (=4be00000) using base1=0x21770/12, entry 1
+Translating 0x1164
+0x1164 => 0x27164 (=54000000) using base1=0x21770/12, entry 1
+Translating 0x1168
+0x1168 => 0x27168 (=23bd0008) using base1=0x21770/12, entry 1
+Translating 0x116c
+0x116c => 0x2716c (=0c0000bc) using base1=0x21770/12, entry 1
+Translating 0x122c
+0x122c => 0x2722c (=44000431) using base1=0x21770/12, entry 1
+Translating 0x1230
+0x1230 => 0x27230 (=4be00000) using base1=0x21770/12, entry 1
+Translating 0x1170
+0x1170 => 0x27170 (=54000000) using base1=0x21770/12, entry 1
+Translating 0x1174
+0x1174 => 0x27174 (=23bdfff8) using base1=0x21770/12, entry 1
+Translating 0x1178
+0x1178 => 0x27178 (=afa10000) using base1=0x21770/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2aee0 (=00003098) using base1=0x21770/12, entry 255
+Translating 0x117c
+0x117c => 0x2717c (=0c0000c4) using base1=0x21770/12, entry 1
+Translating 0x1244
+0x1244 => 0x27244 (=44000433) using base1=0x21770/12, entry 1
+Current PTE0 of process30 is 155653
+Current PTE1 of process30 is 159749
+Current PTE2 of process30 is 163845
+Current PTE3 of process30 is 167941
+Current PTE4 of process30 is 0
+Current PTE5 of process30 is 0
+Current PTE6 of process30 is 0
+Current PTE7 of process30 is 0
+Current PTE8 of process30 is 0
+Current PTE9 of process30 is 0
+Current PTE10 of process30 is 0
+Current PTE11 of process30 is 0
+Current PTE12 of process30 is 0
+Current PTE13 of process30 is 0
+Current PTE14 of process30 is 0
+Current PTE15 of process30 is 0
+Current PTE16 of process30 is 0
+Current PTE17 of process30 is 0
+Current PTE18 of process30 is 0
+Current PTE19 of process30 is 0
+Current PTE20 of process30 is 0
+Current PTE21 of process30 is 0
+Current PTE22 of process30 is 0
+Current PTE23 of process30 is 0
+Current PTE24 of process30 is 0
+Current PTE25 of process30 is 0
+Current PTE26 of process30 is 0
+Current PTE27 of process30 is 0
+Current PTE28 of process30 is 0
+Current PTE29 of process30 is 0
+Current PTE30 of process30 is 0
+Current PTE31 of process30 is 0
+Current PTE32 of process30 is 0
+Current PTE33 of process30 is 0
+Current PTE34 of process30 is 0
+Current PTE35 of process30 is 0
+Current PTE36 of process30 is 0
+Current PTE37 of process30 is 0
+Current PTE38 of process30 is 0
+Current PTE39 of process30 is 0
+Current PTE40 of process30 is 0
+Current PTE41 of process30 is 0
+Current PTE42 of process30 is 0
+Current PTE43 of process30 is 0
+Current PTE44 of process30 is 0
+Current PTE45 of process30 is 0
+Current PTE46 of process30 is 0
+Current PTE47 of process30 is 0
+Current PTE48 of process30 is 0
+Current PTE49 of process30 is 0
+Current PTE50 of process30 is 0
+Current PTE51 of process30 is 0
+Current PTE52 of process30 is 0
+Current PTE53 of process30 is 0
+Current PTE54 of process30 is 0
+Current PTE55 of process30 is 0
+Current PTE56 of process30 is 0
+Current PTE57 of process30 is 0
+Current PTE58 of process30 is 0
+Current PTE59 of process30 is 0
+Current PTE60 of process30 is 0
+Current PTE61 of process30 is 0
+Current PTE62 of process30 is 0
+Current PTE63 of process30 is 0
+Current PTE64 of process30 is 0
+Current PTE65 of process30 is 0
+Current PTE66 of process30 is 0
+Current PTE67 of process30 is 0
+Current PTE68 of process30 is 0
+Current PTE69 of process30 is 0
+Current PTE70 of process30 is 0
+Current PTE71 of process30 is 0
+Current PTE72 of process30 is 0
+Current PTE73 of process30 is 0
+Current PTE74 of process30 is 0
+Current PTE75 of process30 is 0
+Current PTE76 of process30 is 0
+Current PTE77 of process30 is 0
+Current PTE78 of process30 is 0
+Current PTE79 of process30 is 0
+Current PTE80 of process30 is 0
+Current PTE81 of process30 is 0
+Current PTE82 of process30 is 0
+Current PTE83 of process30 is 0
+Current PTE84 of process30 is 0
+Current PTE85 of process30 is 0
+Current PTE86 of process30 is 0
+Current PTE87 of process30 is 0
+Current PTE88 of process30 is 0
+Current PTE89 of process30 is 0
+Current PTE90 of process30 is 0
+Current PTE91 of process30 is 0
+Current PTE92 of process30 is 0
+Current PTE93 of process30 is 0
+Current PTE94 of process30 is 0
+Current PTE95 of process30 is 0
+Current PTE96 of process30 is 0
+Current PTE97 of process30 is 0
+Current PTE98 of process30 is 0
+Current PTE99 of process30 is 0
+Current PTE100 of process30 is 0
+Current PTE101 of process30 is 0
+Current PTE102 of process30 is 0
+Current PTE103 of process30 is 0
+Current PTE104 of process30 is 0
+Current PTE105 of process30 is 0
+Current PTE106 of process30 is 0
+Current PTE107 of process30 is 0
+Current PTE108 of process30 is 0
+Current PTE109 of process30 is 0
+Current PTE110 of process30 is 0
+Current PTE111 of process30 is 0
+Current PTE112 of process30 is 0
+Current PTE113 of process30 is 0
+Current PTE114 of process30 is 0
+Current PTE115 of process30 is 0
+Current PTE116 of process30 is 0
+Current PTE117 of process30 is 0
+Current PTE118 of process30 is 0
+Current PTE119 of process30 is 0
+Current PTE120 of process30 is 0
+Current PTE121 of process30 is 0
+Current PTE122 of process30 is 0
+Current PTE123 of process30 is 0
+Current PTE124 of process30 is 0
+Current PTE125 of process30 is 0
+Current PTE126 of process30 is 0
+Current PTE127 of process30 is 0
+Current PTE128 of process30 is 0
+Current PTE129 of process30 is 0
+Current PTE130 of process30 is 0
+Current PTE131 of process30 is 0
+Current PTE132 of process30 is 0
+Current PTE133 of process30 is 0
+Current PTE134 of process30 is 0
+Current PTE135 of process30 is 0
+Current PTE136 of process30 is 0
+Current PTE137 of process30 is 0
+Current PTE138 of process30 is 0
+Current PTE139 of process30 is 0
+Current PTE140 of process30 is 0
+Current PTE141 of process30 is 0
+Current PTE142 of process30 is 0
+Current PTE143 of process30 is 0
+Current PTE144 of process30 is 0
+Current PTE145 of process30 is 0
+Current PTE146 of process30 is 0
+Current PTE147 of process30 is 0
+Current PTE148 of process30 is 0
+Current PTE149 of process30 is 0
+Current PTE150 of process30 is 0
+Current PTE151 of process30 is 0
+Current PTE152 of process30 is 0
+Current PTE153 of process30 is 0
+Current PTE154 of process30 is 0
+Current PTE155 of process30 is 0
+Current PTE156 of process30 is 0
+Current PTE157 of process30 is 0
+Current PTE158 of process30 is 0
+Current PTE159 of process30 is 0
+Current PTE160 of process30 is 0
+Current PTE161 of process30 is 0
+Current PTE162 of process30 is 0
+Current PTE163 of process30 is 0
+Current PTE164 of process30 is 0
+Current PTE165 of process30 is 0
+Current PTE166 of process30 is 0
+Current PTE167 of process30 is 0
+Current PTE168 of process30 is 0
+Current PTE169 of process30 is 0
+Current PTE170 of process30 is 0
+Current PTE171 of process30 is 0
+Current PTE172 of process30 is 0
+Current PTE173 of process30 is 0
+Current PTE174 of process30 is 0
+Current PTE175 of process30 is 0
+Current PTE176 of process30 is 0
+Current PTE177 of process30 is 0
+Current PTE178 of process30 is 0
+Current PTE179 of process30 is 0
+Current PTE180 of process30 is 0
+Current PTE181 of process30 is 0
+Current PTE182 of process30 is 0
+Current PTE183 of process30 is 0
+Current PTE184 of process30 is 0
+Current PTE185 of process30 is 0
+Current PTE186 of process30 is 0
+Current PTE187 of process30 is 0
+Current PTE188 of process30 is 0
+Current PTE189 of process30 is 0
+Current PTE190 of process30 is 0
+Current PTE191 of process30 is 0
+Current PTE192 of process30 is 0
+Current PTE193 of process30 is 0
+Current PTE194 of process30 is 0
+Current PTE195 of process30 is 0
+Current PTE196 of process30 is 0
+Current PTE197 of process30 is 0
+Current PTE198 of process30 is 0
+Current PTE199 of process30 is 0
+Current PTE200 of process30 is 0
+Current PTE201 of process30 is 0
+Current PTE202 of process30 is 0
+Current PTE203 of process30 is 0
+Current PTE204 of process30 is 0
+Current PTE205 of process30 is 0
+Current PTE206 of process30 is 0
+Current PTE207 of process30 is 0
+Current PTE208 of process30 is 0
+Current PTE209 of process30 is 0
+Current PTE210 of process30 is 0
+Current PTE211 of process30 is 0
+Current PTE212 of process30 is 0
+Current PTE213 of process30 is 0
+Current PTE214 of process30 is 0
+Current PTE215 of process30 is 0
+Current PTE216 of process30 is 0
+Current PTE217 of process30 is 0
+Current PTE218 of process30 is 0
+Current PTE219 of process30 is 0
+Current PTE220 of process30 is 0
+Current PTE221 of process30 is 0
+Current PTE222 of process30 is 0
+Current PTE223 of process30 is 0
+Current PTE224 of process30 is 0
+Current PTE225 of process30 is 0
+Current PTE226 of process30 is 0
+Current PTE227 of process30 is 0
+Current PTE228 of process30 is 0
+Current PTE229 of process30 is 0
+Current PTE230 of process30 is 0
+Current PTE231 of process30 is 0
+Current PTE232 of process30 is 0
+Current PTE233 of process30 is 0
+Current PTE234 of process30 is 0
+Current PTE235 of process30 is 0
+Current PTE236 of process30 is 0
+Current PTE237 of process30 is 0
+Current PTE238 of process30 is 0
+Current PTE239 of process30 is 0
+Current PTE240 of process30 is 0
+Current PTE241 of process30 is 0
+Current PTE242 of process30 is 0
+Current PTE243 of process30 is 0
+Current PTE244 of process30 is 0
+Current PTE245 of process30 is 0
+Current PTE246 of process30 is 0
+Current PTE247 of process30 is 0
+Current PTE248 of process30 is 0
+Current PTE249 of process30 is 0
+Current PTE250 of process30 is 0
+Current PTE251 of process30 is 0
+Current PTE252 of process30 is 0
+Current PTE253 of process30 is 0
+Current PTE254 of process30 is 0
+Current PTE255 of process30 is 172035
+Translating 0x1248
+0x1248 => 0x27248 (=4be00000) using base1=0x21770/12, entry 1
+Translating 0x1180
+0x1180 => 0x27180 (=54000000) using base1=0x21770/12, entry 1
+Translating 0x1184
+0x1184 => 0x27184 (=23bd0008) using base1=0x21770/12, entry 1
+Translating 0x1188
+0x1188 => 0x27188 (=23bdfff8) using base1=0x21770/12, entry 1
+Translating 0x118c
+0x118c => 0x2718c (=3c030000) using base1=0x21770/12, entry 1
+Translating 0x1190
+0x1190 => 0x27190 (=24633000) using base1=0x21770/12, entry 1
+Translating 0x1194
+0x1194 => 0x27194 (=afa30000) using base1=0x21770/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2aee0 (=0000001e) using base1=0x21770/12, entry 255
+Translating 0x1198
+0x1198 => 0x27198 (=0c000078) using base1=0x21770/12, entry 1
+Translating 0x1214
+0x1214 => 0x27214 (=44000201) using base1=0x21770/12, entry 1
+-------------------------------------------------------------------------------------
+Translating 0x1218
+0x1218 => 0x27218 (=4be00000) using base1=0x21770/12, entry 1
+Translating 0x119c
+0x119c => 0x2719c (=54000000) using base1=0x21770/12, entry 1
+Translating 0x11a0
+0x11a0 => 0x271a0 (=0c000088) using base1=0x21770/12, entry 1
+Translating 0x122c
+0x122c => 0x2722c (=44000431) using base1=0x21770/12, entry 1
+Translating 0x1230
+0x1230 => 0x27230 (=4be00000) using base1=0x21770/12, entry 1
+Translating 0x11a4
+0x11a4 => 0x271a4 (=54000000) using base1=0x21770/12, entry 1
+Translating 0x11a8
+0x11a8 => 0x271a8 (=3c030000) using base1=0x21770/12, entry 1
+Translating 0x11ac
+0x11ac => 0x271ac (=246330ac) using base1=0x21770/12, entry 1
+Translating 0x11b0
+0x11b0 => 0x271b0 (=afa30000) using base1=0x21770/12, entry 1
+Translating 0xffee0
+0xffee0 => 0x2aee0 (=00003000) using base1=0x21770/12, entry 255
+Translating 0x11b4
+0x11b4 => 0x271b4 (=afa10004) using base1=0x21770/12, entry 1
+Translating 0xffee4
+0xffee4 => 0x2aee4 (=00000000) using base1=0x21770/12, entry 255
+Translating 0x11b8
+0x11b8 => 0x271b8 (=0c000058) using base1=0x21770/12, entry 1
+Translating 0x1214
+0x1214 => 0x27214 (=44000201) using base1=0x21770/12, entry 1
+makeprocs (30): All other processes completed, exiting main process.
+Translating 0x1218
+0x1218 => 0x27218 (=4be00000) using base1=0x21770/12, entry 1
+Translating 0x11bc
+0x11bc => 0x271bc (=54000000) using base1=0x21770/12, entry 1
+Translating 0x11c0
+0x11c0 => 0x271c0 (=23bd0008) using base1=0x21770/12, entry 1
+Translating 0x11c4
+0x11c4 => 0x271c4 (=0c000f18) using base1=0x21770/12, entry 1
+Translating 0x20e0
+0x20e0 => 0x280e0 (=44000300) using base1=0x21770/12, entry 2
+No runnable processes - exiting!
+Exiting at program request.
+Instructions executed: 3994357
+Time simulated: 3.994 secs
+Real time elapsed: 0.390 secs
+Execution rate: 10.25M simulated instructions per real second.
+#cd ../../bin; dlxsim -x os.dlx.obj -a -u makeprocs.dlx.obj; ee469_fixterminal
+make[1]: Leaving directory `/home/min/a/ece69501/ece695/lab3/fork/apps/example'

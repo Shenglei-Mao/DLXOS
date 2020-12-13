@@ -1,0 +1,151 @@
+cd ../apps/ostests; make && make run
+make[1]: Entering directory `/home/min/a/ece69501/lab3-Shenglei/lab4/flat/apps/ostests'
+cd ostests; make
+make[2]: Entering directory `/home/min/a/ece69501/lab3-Shenglei/lab4/flat/apps/ostests/ostests'
+make[2]: Nothing to be done for `top'.
+make[2]: Leaving directory `/home/min/a/ece69501/lab3-Shenglei/lab4/flat/apps/ostests/ostests'
+make[1]: Leaving directory `/home/min/a/ece69501/lab3-Shenglei/lab4/flat/apps/ostests'
+make[1]: Entering directory `/home/min/a/ece69501/lab3-Shenglei/lab4/flat/apps/ostests'
+cd ../../bin; dlxsim -x os.dlx.obj -a -D F -u ostests.dlx.obj; ee469_fixterminal
+Stack=0x1fffc4, pc starting at 0x16f18
+Got 4 arguments.
+Available memory: 0x2e1ec -> 0x200000.
+Argument count is 4.
+Argument 0 is -D.
+Argument 1 is F.
+Argument 2 is -u.
+Argument 3 is ostests.dlx.obj.
+ReadSuperBlock: sb.fdisk_blocksize is: 512
+ReadSuperBlock: sb.fdisk_num_blocks is: 131072
+ReadSuperBlock: sb.fdisk_inode_block_start is: 1
+ReadSuperBlock: sb.fdisk_num_inode is: 192
+ReadSuperBlock: sb.fdisk_fbv_block_start is: 37
+Read super block done
+Inode 0 status: 69
+Read inode done
+Read fbv done
+Write super block done
+fs open success
+dfs module init success
+File system already opened! Not gonna open again!
+Testcase1 Passed
+DFS close successfully
+ReadSuperBlock: sb.fdisk_blocksize is: 512
+ReadSuperBlock: sb.fdisk_num_blocks is: 131072
+ReadSuperBlock: sb.fdisk_inode_block_start is: 1
+ReadSuperBlock: sb.fdisk_num_inode is: 192
+ReadSuperBlock: sb.fdisk_fbv_block_start is: 37
+Read super block done
+Inode 0 status: 69
+Read inode done
+Read fbv done
+Write super block done
+fs open success
+Testcase2 Passed
+Testcase3 Passed
+Testcase4 Passed
+DFS close successfully
+ReadSuperBlock: sb.fdisk_blocksize is: 512
+ReadSuperBlock: sb.fdisk_num_blocks is: 131072
+ReadSuperBlock: sb.fdisk_inode_block_start is: 1
+ReadSuperBlock: sb.fdisk_num_inode is: 192
+ReadSuperBlock: sb.fdisk_fbv_block_start is: 37
+Read super block done
+Inode 0 status: 69
+Read inode done
+Read fbv done
+Write super block done
+fs open success
+Testcase5 Passed
+The first allocated fs block is 72
+Testcase6 Passed
+DFS close successfully
+ReadSuperBlock: sb.fdisk_blocksize is: 512
+ReadSuperBlock: sb.fdisk_num_blocks is: 131072
+ReadSuperBlock: sb.fdisk_inode_block_start is: 1
+ReadSuperBlock: sb.fdisk_num_inode is: 192
+ReadSuperBlock: sb.fdisk_fbv_block_start is: 37
+Read super block done
+Inode 0 status: 69
+Read inode done
+Read fbv done
+Write super block done
+fs open success
+Testcase7 passed
+Fatal Error: DfsFreeBlock block 72 is not in use
+Above fatal error is triggered on purpose. Testcase8 Passed
+Testcase9 Passed
+Testcase10 init done
+Testcase10 Passed
+inode handle is:0
+vlock inside translate is 1
+entry is 0
+fsblock_idx is 0
+Start to Allocate Blocks for inode 0
+here vblock 1
+here inode.direct_block_translations[virtual_blocknum] is 69
+The new allocated block is 69
+current vblocks num is 1
+The translate table entry is 69
+inode handle is:0
+vlock inside translate is 2
+entry is 0
+fsblock_idx is 0
+Start to Allocate Blocks for inode 0
+here vblock 2
+here inode.direct_block_translations[virtual_blocknum] is 70
+The new allocated block is 70
+current vblocks num is 2
+The translate table entry is 70
+inode handle is:0
+vlock inside translate is 3
+entry is 0
+fsblock_idx is 0
+Start to Allocate Blocks for inode 0
+here vblock 3
+here inode.direct_block_translations[virtual_blocknum] is 71
+The new allocated block is 71
+current vblocks num is 3
+The translate table entry is 71
+inode handle is:0
+vlock inside translate is 1
+entry is 69
+inode handle is:0
+vlock inside translate is 2
+entry is 70
+inode handle is:0
+vlock inside translate is 3
+entry is 71
+Testcase11 passed
+DFS close successfully
+ReadSuperBlock: sb.fdisk_blocksize is: 512
+ReadSuperBlock: sb.fdisk_num_blocks is: 131072
+ReadSuperBlock: sb.fdisk_inode_block_start is: 1
+ReadSuperBlock: sb.fdisk_num_inode is: 192
+ReadSuperBlock: sb.fdisk_fbv_block_start is: 37
+Read super block done
+Inode 0 status: 69
+Read inode done
+Read fbv done
+Write super block done
+fs open success
+inode handle is:0
+vlock inside translate is 1
+entry is 69
+inode handle is:0
+vlock inside translate is 2
+entry is 70
+inode handle is:0
+vlock inside translate is 3
+entry is 71
+Testcase12 passed
+Testcase13 passed
+No runnable processes - exiting!
+GracefulExit: closing filesystem and exiting simulator
+DFS close successfully
+Exiting at program request.
+Instructions executed: 9387103
+Time simulated: 9.387 secs
+Real time elapsed: 0.577 secs
+Execution rate: 16.27M simulated instructions per real second.
+make[1]: Leaving directory `/home/min/a/ece69501/lab3-Shenglei/lab4/flat/apps/ostests'

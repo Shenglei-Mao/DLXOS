@@ -1,0 +1,53 @@
+1.How many semaphores and locks are available in DLXOS, respectively?
+#define MAX_SEMS	32	//Maximum 32 semaphores allowed in the system
+#define MAX_LOCKS	64	//Maximum 64 locks allowed in the system
+
+Ans: 32 sems and 64 locks are available in DLXOS
+
+2.What are the system calls to create, acquire and release a lock?
+lock_t lock_create();			//trap 0x452 Calls LockCreate()
+int lock_acquire(lock_t lock);		//trap 0x453 Calls LockHandleAcquire()
+int lock_release(lock_t lock);		//trap 0x454 Calls LockHandleRelease()
+
+3.How is a semaphore created in DLXOS?
+
+@Reference: Souce Code
+sem_t SemCreate(int count) {
+  sem_t sem;
+  uint32 intrval;
+
+  // grabbing a semaphore should be an atomic operation
+  intrval = DisableIntrs();
+  for(sem=0; sem<MAX_SEMS; sem++) {
+    if(sems[sem].inuse==0) {
+      sems[sem].inuse = 1;
+      break;
+    }
+  }
+  RestoreIntrs(intrval);
+  if(sem==MAX_SEMS) return SYNC_FAIL;
+
+  if (SemInit(&sems[sem], count) != SYNC_SUCCESS) return SYNC_FAIL;
+  return sem;
+}
+
+@Reference: https://engineering.purdue.edu/~ece695x/labs_2020/lab2-api.pdf
+
+sem_t sem_create(int count);		//trap 0x450
+Usage: sem = sem create(int count);
+
+Description: sem create grabs a semaphore from the static list of semaphores, initializes it to count, and returns a unique handle corresponding to this semaphore. All the future references to this semaphore must be made using this handle.
+Limitations: There can at most be 32 different semaphores in the system. The function fails if all the 32 semaphores are already being used. In that case, itreturns INVALID SEM
+
+
+4.Explain how lock_acquire, lock_release, sem_signal and sem_wait work.
+Lock_acquire: The lock acquire routine acquires a lock given its handle. In its handle, it stores the current in-use pid(-1 if not). If current pid already owns the lock, the function return immediately; if some other processes owns the lock, this function will put itself into a waiting queue and sleep the current process; if no process is using current pid, it will set the locks pid to currentpid and get the lock successfully.
+
+Lock_release: First it will check against the lock current holder by pid, if the lock currently hold by this pid it will get one waiting processes from the head of the waiting queue and point the lock pid to that process then wake that process up.
+
+Sem_wait: The SemWait checks if the sem counter less than 0, if the counter is less than 0, it means there's no sem available, and it will put the process to sleep. If the counter is larger than 0, it will decrease by 1 and give permission to the process to continue.
+
+Sem_signal: The SemSignal disable interrupts before it checks the signal to ensure it is a atomic action. It increases the counter by 1. Then checks if there is a process to wake up, if a process wakes up, then the signal counter decreases 1.
+
+5.What is a handle and how is it used to access semaphores in DLXOS?
+Handle is an abstract reference to a resource, in some way analogus the pointer. We can put the semaphores into a shared memory buffer and make the handle refer to that shared memory buffer. Then we can pass this handle to the child processes to make the shared memory buffer available to all of them.
